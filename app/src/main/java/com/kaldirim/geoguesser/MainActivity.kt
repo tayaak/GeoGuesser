@@ -4,7 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import com.kaldirim.geoguesser.ui.screens.MainScreenUI
+import com.kaldirim.geoguesser.ui.MainScreenUI
+
 
 class MainActivity : ComponentActivity() {
 

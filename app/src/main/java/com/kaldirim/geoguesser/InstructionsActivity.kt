@@ -1,5 +1,16 @@
 package com.kaldirim.geoguesser
 
-class InstructionsActivity {
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import com.kaldirim.geoguesser.ui.InstructionsScreenUI
 
+
+class InstructionsActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            InstructionsScreenUI()
+        }
+    }
 }
