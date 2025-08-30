@@ -15,7 +15,7 @@ fun BackButton(
 ) {
     Button(
         onClick = onClick,
-        modifier = modifier.fillMaxWidth(0.5f), // optional, halbe Breite
+        modifier = modifier.fillMaxWidth(0.25f), // optional, halbe Breite
         colors = androidx.compose.material3.ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.primary
         )

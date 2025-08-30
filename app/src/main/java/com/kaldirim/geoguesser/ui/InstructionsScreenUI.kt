@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.kaldirim.geoguesser.ui.components.BackButton
 
 @Composable
 fun InstructionsScreenUI(onBackClick: () -> Unit) {
@@ -24,9 +25,9 @@ fun InstructionsScreenUI(onBackClick: () -> Unit) {
 
         Spacer(modifier = Modifier.height(16.dp)) // Abstand zum Button
 
-        Button(onClick = onBackClick) {
-            Text("Zurück")
+        BackButton(onClick = onBackClick)
+
         }
     }
     }
-}
+
