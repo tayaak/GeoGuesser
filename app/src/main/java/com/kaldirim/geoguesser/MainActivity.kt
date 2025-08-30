@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import com.kaldirim.geoguesser.ui.MainScreenUI
+import com.kaldirim.geoguesser.ui.theme.GeoguesserTheme
 
 
 class MainActivity : ComponentActivity() {
@@ -14,6 +15,7 @@ class MainActivity : ComponentActivity() {
 
         // Compose UI setzen: MainScreenUI aus ui/screens/MainScreen.kt
         setContent {
+            GeoguesserTheme {
             MainScreenUI(
                 onStartGameClick = {
                     startActivity(Intent(this, GameActivity::class.java))
@@ -24,7 +26,7 @@ class MainActivity : ComponentActivity() {
                 onAboutClick = {
                     startActivity(Intent(this, AboutActivity::class.java))
                 }
-            )
+            )}
         }
     }
 }

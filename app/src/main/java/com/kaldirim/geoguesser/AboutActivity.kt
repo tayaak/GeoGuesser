@@ -10,7 +10,12 @@ class AboutActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            AboutScreenUI()
+
+                AboutScreenUI(onBackClick = { finish() })
+
+
         }
     }
 }
+
+

@@ -10,7 +10,9 @@ class InstructionsActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            InstructionsScreenUI()
+            InstructionsScreenUI(
+                onBackClick = { finish() } // schließt die Activity und geht zurück
+            )
         }
     }
 }

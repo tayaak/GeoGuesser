@@ -10,7 +10,9 @@
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             setContent {
-                GameScreenUI()
+                GameScreenUI( onBackClick = { finish() } // schließt die Activity und geht zurück
+                )
+
             }
         }
     }
